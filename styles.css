@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #3B82F6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563EB;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.form-container {
+    display: none;
+    opacity: 0;
+    animation: fadeInForm 1s forwards;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInForm {
+    0% { opacity: 0; }
+    100% { opacity: 1; display: block; }
+}
